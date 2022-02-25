@@ -1,0 +1,16 @@
+RewriteEngine On
+IndexIgnore *
+Options -Indexes
+RewriteRule ^(css|js) ($|/)
+RewriteRule ^home?$ index.php
+RewriteRule ^about-us?$ about.php
+RewriteRule ^our-services?$ services.php
+RewriteRule ^contact-us?$ contact.php
+RewriteRule ^tracking?$ tracking.php
+RewriteRule ^register?$ register.php
+RewriteRule ^login?$ login.php
+RewriteRule ^forget-password?$ forget.php
+RewriteRule ^logout?$ logout.php
+
+## User
+RewriteRule ^user/dashboard?$ user/dashboard.php
